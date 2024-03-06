@@ -1,0 +1,19 @@
+<main class="background-image">
+  <div class="play-container">
+    <div *ngIf="!showDifficultyButtons && !showGameOverMessage">
+      <app-card *ngIf="showCards"></app-card>
+    </div>
+    <div *ngIf="showPlayButton">
+      <button class="play-button" (click)="showPlayButton = false; showDifficultyButtons = true"></button>
+    </div>
+    <div *ngIf="showDifficultyButtons">
+      <p style="color: aliceblue;">Seleccione dificultad</p>
+      <button (click)="startGame('facil')">Facil</button>
+      <button (click)="startGame('medio')">Medio</button>
+      <button (click)="startGame('dificil')">Dificil</button>
+    </div>
+    <div *ngIf="showGameOverMessage">
+      <p style="color:aliceblue;">Game Over</p>
+    </div>
+  </div>
+</main>

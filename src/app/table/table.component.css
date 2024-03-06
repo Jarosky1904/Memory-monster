@@ -1,0 +1,41 @@
+.background-image {
+  background-image: url('src/assets/img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 89.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-container {
+  margin: 0px;
+  border-style: solid;
+  border-width: 10px;
+  border-image-source: url('/assets/img/borde.jpg');
+  border-image-slice: 100;
+  padding: 20px;
+  outline: 5px solid black;
+  position: relative;
+  background-image: url('/assets/img/scales.jpg');
+  background-size: cover;
+  max-width: 800px; /* Tamaño máximo del contenedor */
+  max-height: 600px; /* Tamaño máximo del contenedor */
+}
+
+
+.play-button {
+  width: 150px;
+  height: 110px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('/assets/img/start.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,53 @@
+.card-row {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+}
+  
+.card-container {
+    width: calc(10% - 1px); 
+    margin: 1px; 
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+.card-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
+    margin-top: 0; 
+}
+
+@keyframes flip-back {
+  0% {
+    transform: perspective(400px) rotateY(360deg);
+  }
+  50% {
+    transform: perspective(400px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(400px) rotateY(0);
+  }
+}
+
+.flip-back {
+  animation: flip-back 0.5s ease-in-out;
+}
+
+
+
+@keyframes flip {
+    0% {
+      transform: perspective(400px) rotateY(0);
+    }
+    50% {
+      transform: perspective(400px) rotateY(180deg);
+    }
+    100% {
+      transform: perspective(400px) rotateY(360deg);
+    }
+  }
+  
+  .flip {
+    animation: flip 0.5s ease-in-out;
+  }

@@ -1,0 +1,11 @@
+<div class="card-row" *ngFor="let pair of pairs; let i=index">
+  <div class="card-container" *ngFor="let image of pair; let j=index">
+    <img [src]="flipped[i * 4 + j] ? 'assets/img/cards/' + image : 'assets/img/Monster-back.png'"
+    alt="Card" 
+    (click)="flipCard(i * 4 + j)" 
+    [ngClass]="{
+      'flip': flipped[i * 4 + j],
+      'flip-back': true
+    }">
+ </div>
+</div>

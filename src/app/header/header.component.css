@@ -1,0 +1,30 @@
+header {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('src/assets/img/black.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .header-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer {
+    margin-right: auto;
+  }
+  
+  .score {
+    margin-left: auto;
+  }
+  
