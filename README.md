@@ -1,5 +1,7 @@
 # MemoryMonster
 
+Pagina interactiva desarrollada en Angular con función de juego de memoria para entretención y desarrollo cognitivo.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
 
 ## Development server
